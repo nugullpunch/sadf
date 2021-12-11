@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qn_as",
+  "info": {
+    "singularName": "qn-a",
+    "pluralName": "qn-as",
+    "displayName": "QnA",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ename": {
+      "type": "string"
+    },
+    "wanttell": {
+      "type": "text"
+    },
+    "edate": {
+      "type": "date"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
